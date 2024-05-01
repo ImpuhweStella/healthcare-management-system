@@ -1,1 +1,2 @@
 # healthcare-management-system
+This system will provide a way to register patients and manage their personal and medical information. It will also implement a scheduling system for booking appointments with healthcare providers. Additionally, it will enable healthcare providers to track and manage patient medical histories, including diagnoses, treatments, and medications. Patients will also be able to send feedback to the admin regarding their treatment by the doctors. This project is built using Node.js, Express, and MongoDB.
