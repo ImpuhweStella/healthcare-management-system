@@ -24,13 +24,13 @@ const sendEmail = async (email, message) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'your-email@gmail.com',
+      user: '',
       pass: 'your-email-password'
     }
   });
 
   const mailOptions = {
-    from: 'your-email@gmail.com',
+    from: 'stellahimpuhwe346@gmail.com',
     to: email,
     subject: 'Appointment Confirmation',
     text: message
