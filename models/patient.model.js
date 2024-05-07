@@ -10,24 +10,13 @@ const patientSchema = new mongoose.Schema({
   address: { 
     street: String,
     city: String,
-    state: String,
-    zipCode: String,
     country: String
   },
-  medicalHistory: {
-    allergies: [String],
-    conditions: [String],
-    surgeries: [String],
-    medications: [String],
-    familyHistory: {
-      conditions: [String],
-      members: [{
-        relation: String,
-        age: Number,
-        conditions: [String]
-      }]
-    }
-  },
+  medicalHistory: [{
+    diagnosis: String,
+    treatment: String,
+    medication: String
+  }],
   insurance: {
     provider: String,
     policyNumber: String

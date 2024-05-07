@@ -1,9 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const authRoutes = require('./routes/auth');
-const patientRoutes = require('./routes/patient');
-const appointmentRoutes = require('./routes/appointment');
-const feedbackRoutes = require('./routes/feedback');
+// const authRoutes = require('./routes/');
+// const patientRoutes = require('./routes/patient');
+// const appointmentRoutes = require('./routes/appointment');
+// const feedbackRoutes = require('./routes/feedback');
 require('dotenv').config();
 const { MONGO_URI } = process.env;
 
@@ -13,10 +13,10 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use('/auth', authRoutes);
-app.use('/patients', patientRoutes);
-app.use('/appointments', appointmentRoutes);
-app.use('/feedback', feedbackRoutes); 
+// app.use('/auth', authRoutes);
+// app.use('/patients', patientRoutes);
+// app.use('/appointments', appointmentRoutes);
+// app.use('/feedback', feedbackRoutes); 
 
 // Connect to MongoDB
 mongoose.connect(MONGO_URI)

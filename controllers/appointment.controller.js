@@ -2,6 +2,7 @@
 const Appointment = require('../models/Appointment');
 const Patient = require('../models/Patient');
 const schedule = require('node-schedule');
+const nodemailer = require('nodemailer');
 
 // exports.scheduleAppointment = async (req, res) => {
 //   try {
@@ -16,9 +17,8 @@ const schedule = require('node-schedule');
 //   }
 // };
 
-const Appointment = require('../models/Appointment');
-const Patient = require('../models/Patient');
-const nodemailer = require('nodemailer');
+
+
 
 const sendEmail = async (email, message) => {
   const transporter = nodemailer.createTransport({
